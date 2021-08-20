@@ -8,19 +8,29 @@ body {
   letter-spacing: 2.5px;
 }
 
-body .bg-img {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+.bg-img {
+  /* position: absolute; */
+  background: url("/assets/images/bg_img.jpg") #669588 no-repeat;
+  background-size: cover;
+  background-position: right center;
+  display: block;
+  margin: auto;
+  padding-bottom: 19.55rem;
+  max-width: 100%;
+  min-height: 100%;
+  background-blend-mode: overlay;
+  /* overflow: hidden; */
 }
 
-.bg-img img {
+/* .bg-img > img {
+  position: fixed;
+
+  box-shadow: inset 2000px 0 0 0 rgba(0, 125, 255, 0.5);
+  border-color: rgba(0, 125, 255, 1);
   width: 100%;
-  height: 100%;
-  opacity: 0.6;
-}
+  height: auto;
+  /* opacity: 0.6; */
+/* } */
 
 header {
   position: relative;
@@ -32,9 +42,9 @@ header {
 }
 
 #heading {
-  /* text-align: center; */
   text-decoration: none;
-  color: #000;
+  color: #3f9fc9;
+  font-size: 50px;
 }
 
 .nav-link {
@@ -50,24 +60,36 @@ header {
 
 .nav-links {
   text-decoration: none;
-  color: #ffffff;
+  color: #032e60;
 }
 
 .nav-links:hover {
-  color: #5ba3d3;
+  color: #3f9fc9;
 }
 
 .sign-btns {
-  border: 1px solid #5ba3d3;
+  border: 1px solid #3f9fc9;
   border-radius: 10px;
-  background-color: #5ba3d3;
+  background-color: #3f9fc9;
   padding: 10px 15px;
 }
 
+.sign-btns:hover {
+  background-color: #71aeda;
+  border-color: #71aeda;
+  color: #058ed9;
+}
+
+#sign-in,
+#sign-up {
+  color: #fff;
+}
+
 .main-section {
+  text-transform: uppercase;
   position: relative;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 80px;
   color: #fff;
 }
 
